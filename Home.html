@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Report Power Cuts</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="Bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/scrolling-nav.js"></script>
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<style type="text/css">
+		body{background-image: url(img/switch.jpeg);
+			background-size: 25%;
+			}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="nav-header">
+				<ul class="nav navbar-nav ">
+					<li><a class="active" href="Login.html">LOGIN</a></li>
+					<li><a class="active" href="Signup.html">SIGN UP</a></li>
+					<li><a class="active" href="Home.html">HOME</a></li>
+					<li><a class="active" href="About-Us.html">ABOUT US</a></li>
+					<li><a class="active" href="Contact-Us.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<fieldset class="text-center" style="font-size:20px; margin-right:30%;  margin-left:30%">
+		<form>
+			<div id="section2a" >
+				<label>
+					Key in your current location:
+					<span class="glyphicon glyphicon-map-marker"></span><input type="town" name="location" placeholder="Location">
+				</label>
+				<br>
+				<label>
+				<span class="glyphicon glyphicon-pencil"></span>Kindly key in your complaint here:<br>
+				<textarea width="50px" height="20px" placeholder="Text here" required=""></textarea>
+				</label>
+				<br>
+				<br>
+				<label>
+				<span class="glyphicon glyphicon-time"></span>Duration of power outage:<br>
+					<select required="">
+						<option value="0-1">0-1days</option>
+						<option value="2-4">2-4days</option>
+						<option value="4-7">4-7days</option>
+						<option value="1-2">1-2weeks</option>
+						<option value="2-3">2-3weeks</option>
+						<option value="3-4">3-4weeks</option>
+						<option value="1month plus">1month plus</option>
+					</select>
+				</label>
+				<br>
+				<br>
+				<label>
+				<input class="btn btn-success"  type="submit" name="Submit" value="submit">
+				</label>
+				<label>
+					<button data-toggle="collapse" class="btn btn-warning">NEXT</button>
+				</label>
+				<br>
+			</div>
+		</form>
+	</fieldset>
+	<br>
+	<div id="section2c"  style="font-size:20px">
+		Please wait as K.P&L.Co service your request... 
+		 <div class="progress" >
+ 			 <div class="progress-bar progress-bar-striped active" role="progressbar"
+  					aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
+   				 99%
+  			</div>
+		</div>
+		<p><q>Dear Customer,<br>
+					We are sorry for the interrupted power supply due to electrical faults. We will look into the probem at your location, that may take ( ) days.Kindly bear with us. Thank you. <br>
+			Yours Sincerely, 
+			K.P&L.Co
+			</q></p>
+	</div>
+</body>
+</html>
